@@ -1,1 +1,1 @@
-# transcribe-youtube-videos
+# Transcribe youtube videos using OpenAi's Whisper
