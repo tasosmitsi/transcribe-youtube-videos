@@ -20,8 +20,8 @@ def main ():
 
 
     for id in video_ids:
-        result = subprocess.run("yt-dlp -x --audio-format mp3 -o lexipod/" + id + " -- https://www.youtube.com/watch?v=" + id, shell=True)
-        result = subprocess.run("whisper --language en --device cuda --model medium -o lexipod -- lexipod/" + id + ".mp3", shell=True)
+        result = subprocess.run("yt-dlp -x --audio-format mp3 -o vids/" + id + " -- https://www.youtube.com/watch?v=" + id, shell=True)
+        result = subprocess.run("whisper --language en --device cuda --model medium -o vids -- vids/" + id + ".mp3", shell=True)
         print(id + " done")
 
 if __name__ == "__main__":
